@@ -1,0 +1,74 @@
+.food-recomend{
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h2{
+        color: #D24545;
+        padding: 2rem 0;
+        text-align: left;
+        font-size: 1.35rem;
+        padding: 10px;
+    }
+
+    .allFood{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(19,1fr);
+        overflow-x: scroll;
+        column-gap: 2.5rem;
+
+        &::-webkit-scrollbar{
+            height: 7px;
+            width: 7px;
+            background: #D24545;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+        
+        &::-webkit-scrollbar-thumb:horizontal{
+            background: #D24545;
+            border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb:horizontal{
+            background: #D24545;
+            border-radius: 5px;
+        }
+
+        .food-card{
+            width: 150px;
+
+
+            .head-food-card{
+                width: 100%;
+                height: 150px;
+                background-size : cover;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+            }
+
+            .body-food-card{
+                h3{
+                    text-align: center;
+                    margin-top: 1rem;
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}

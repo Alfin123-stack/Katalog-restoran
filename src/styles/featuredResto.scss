@@ -1,0 +1,23 @@
+.featured-restaurant{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .judul-fr{
+        color: #D24545;
+        padding-bottom: 2rem;
+        text-align: left;
+        font-size: 1.35rem;
+        padding: 10px;
+        
+    }
+    .allResto{
+        grid-template-columns: repeat(9,1fr);
+        column-gap: 1.5rem;
+        overflow-x: scroll;
+        padding: 10px;
+
+        .card-resto{
+            width: 350px;
+        }
+    }
+}

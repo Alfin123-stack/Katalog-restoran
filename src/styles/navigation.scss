@@ -1,0 +1,93 @@
+nav{
+    width: 100%;
+    padding: 20px;
+    background-color: #D24545;
+    color: white;
+    position: fixed;
+    box-shadow: 0 -5px 5px 5px rgba(0,0,0,.2);
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+
+    .logo{
+      span{
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
+
+    #hamburgerMenu{
+      min-width: 44px;
+      min-height: 44px;
+      display: inline-block;
+      padding: 10px;
+      @media screen and (min-width : 768px) {
+        display: none;
+      }
+      i{
+        font-size: 25px;
+        color : white;
+      }
+    }
+
+    ul{
+        position: absolute;
+        right: 0;
+        margin-top: 3em;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #D24545;
+
+        padding: 10px;
+        width: 50vw;
+        height: 100vh;
+        transform: translateX(500px);
+        transition: all .5s;
+
+        @media screen and (min-width : 768px) {
+          transform: translateX(0);
+          flex-direction: row;
+          position: static;
+          width: 65%;
+          height: auto;
+          margin-top: 0;
+          padding: 0;
+          justify-content: space-between;
+          text-align: center;
+        }
+
+        li{
+            a{
+              min-width: 44px;
+              min-height: 44px;
+              display: inline-block;
+              padding: 10px;
+              text-decoration: none;
+              color: white;
+              font-size: 1rem;
+              transition: all .2s;
+              @media screen and (min-width : 768px) {
+                font-weight: 500;
+                font-size: .9rem;
+              }
+
+              @media screen and (min-width : 992px) {
+                font-size: 1rem;
+              }
+            
+              &:hover{
+                color: black;
+              }
+        }
+    }
+  }
+}
+
+.open{
+  transform: translateX(0);
+}
+.body{
+  opacity: .5;
+}
